@@ -28,3 +28,7 @@ a consumer enters a selection, it should report what was selected.
    the challenge.
 6. Submission deadline: Solution must be received by Talent Acquisition Team within 1
    week.
+
+## Solution
+
+
