@@ -2,6 +2,7 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "C:\\Users\\schmi\\Downloads\\junit-jupiter-api-5.0.0-M1",
-        "c:\\Users\\schmi\\Downloads\\junit-platform-console-standalone-1.8.0-RC1.jar"
+        "c:\\Users\\schmi\\Downloads\\junit-platform-console-standalone-1.8.0-RC1.jar",
+        "c:\\Users\\schmi\\Downloads\\json-simple-1.1.jar"
     ]
 }
