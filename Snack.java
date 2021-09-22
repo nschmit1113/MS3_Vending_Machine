@@ -1,3 +1,9 @@
+/*
+ *@Author: Nikolaus Schmitt
+ *This class holds the information for a single item in the vending machine.
+ *@Throws IllegalStateException in two methods.
+ */
+
 public class Snack {
     
     private int amount = 0;
@@ -19,6 +25,17 @@ public class Snack {
 
     public void addAmount(){
         this.amount++;
+    }
+
+    public void changePrice(double newPrice){
+        if(newPrice < 0){
+            throw new IllegalStateException("Entered price in invalid");
+        }
+        this.price = newPrice;
+    }
+
+    public void changeName(String newName){
+        this.name = newName;
     }
 
     public int checkAmount(){
