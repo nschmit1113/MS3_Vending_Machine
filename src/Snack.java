@@ -1,3 +1,4 @@
+package src;
 /*
  *@Author: Nikolaus Schmitt
  *This class holds the information for a single item in the vending machine.
