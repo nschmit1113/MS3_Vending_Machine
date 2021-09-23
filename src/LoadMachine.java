@@ -12,13 +12,15 @@ import org.json.simple.parser.*;
 public class LoadMachine {
 
     public LoadMachine(){
-        
+
     }
 
     public void readInJson(){
         JSONParser jP = new JSONParser();
         try {
             JSONObject jsonObject = (JSONObject) jP.parse(new FileReader("../input.json"));
+            //String id = (String) jsonObject.get("ID"); example
+            
         } catch (Exception e) {
             //TODO: handle exception
         }
