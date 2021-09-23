@@ -1,4 +1,5 @@
-package src;
+package MS3_Vending_Machine.src;
+
 class Inventory{
 
     /*
@@ -27,9 +28,9 @@ class Inventory{
         return e;
     }
 
-    //Takes an array
-    public void add(Snack sn){
-
+    //Takes a snack object and adds it to the array
+    public void add(Snack sn, int row, int col){
+        arr[row][col] = sn;
     }
 
 }

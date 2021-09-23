@@ -1,4 +1,4 @@
-package src;
+package MS3_Vending_Machine.src;
 /*
  *@Author: Nikolaus Schmitt
  *This class holds the information for a single item in the vending machine.

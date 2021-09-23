@@ -1,4 +1,4 @@
-package src;
+package MS3_Vending_Machine.src;
 
 import java.io.*;
 import java.util.*;
@@ -11,21 +11,33 @@ import org.json.simple.parser.*;
 
 public class LoadMachine {
 
-    public LoadMachine(){
+    private int rows = 0;
+    private int cols = 0;
 
+    public LoadMachine(String fileName){
+        readInJson(fileName);
     }
 
-    public void readInJson(){
+    public void readInJson(String fileName){
         JSONParser jP = new JSONParser();
         try {
-            JSONObject jsonObject = (JSONObject) jP.parse(new FileReader("../input.json"));
+            JSONObject jsonObject = (JSONObject) jP.parse(new FileReader(fileName));
             //String id = (String) jsonObject.get("ID"); example
             JSONObject ob = (JSONObject)jsonObject.get("config");
-            int rows = (int)ob.get("rows");
-            int cols = (int)ob.get("columns");
-            
+            rows = (int)ob.get("rows");
+            cols = (int)ob.get("columns");
+
         } catch (Exception e) {
             //TODO: handle exception
         }
+        
+    }
+
+    public int rows(){
+        return rows;
+    }
+
+    public int cols(){
+        return cols;
     }
 }
