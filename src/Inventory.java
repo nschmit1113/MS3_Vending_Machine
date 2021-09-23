@@ -27,5 +27,9 @@ class Inventory{
         return e;
     }
 
+    //Takes an array
+    public void add(Snack sn){
+
+    }
 
 }

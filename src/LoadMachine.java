@@ -20,6 +20,9 @@ public class LoadMachine {
         try {
             JSONObject jsonObject = (JSONObject) jP.parse(new FileReader("../input.json"));
             //String id = (String) jsonObject.get("ID"); example
+            JSONObject ob = (JSONObject)jsonObject.get("config");
+            int rows = (int)ob.get("rows");
+            int cols = (int)ob.get("columns");
             
         } catch (Exception e) {
             //TODO: handle exception
